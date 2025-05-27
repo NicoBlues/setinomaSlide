@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setinoma - Banda de Metal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .section {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: 0;
+        }
+
+        .logo-spin {
+            animation: spin 20s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .neon-shadow {
+            filter: drop-shadow(0 0 15px rgb(61, 6, 61));
+        }
+
+        .z-top {
+            z-index: 10;
+        }
+
+        #fp-nav ul li .fp-tooltip,
+        .fp-watermark {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body data-barba="wrapper" class="text-white">
+    <div data-barba="container" data-barba-namespace="inicio">
+        <div id="fullpage">
+            <!-- Slide 1: Bienvenida -->
+            <div class="section" style="background-image: url('img/fondos/fondo1.webp');">
+                <div class="overlay"></div>
+                <div class="flex flex-col items-center justify-center text-center px-4 z-top relative">
+                    <img src="img/logos/logoRedondo.webp" alt="Logo Setinoma"
+                        class="w-64 sm:w-72 md:w-80 h-auto mb-6 logo-spin neon-shadow" />
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-fuchsia-500 drop-shadow-xl tracking-wide">
+                        Setinoma
+                    </h1>
+                    <p class="mt-4 text-lg sm:text-xl text-indigo-200 italic">Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <div class="mt-6 w-full max-w-md">
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/album/21ZWWVkSaSMZABTmyWcjQc?utm_source=generator&theme=0"
+                            width="100%" height="152" frameBorder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Slide 2: Música -->
+            <div class="section" style="background-image: url('img/fondos/fondo2.webp');">
+                <div class="overlay"></div>
+                <div class="flex flex-col items-center justify-center text-center px-4 z-top relative">
+                    <h2 class="text-4xl font-bold text-fuchsia-400 mb-8">Música</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
+                        <!-- Tarjeta 1: EP -->
+                        <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
+                            <img src="img/portadas/portadaEP (1).webp" alt="EP"
+                                class="w-full h-48 object-contain rounded-md mb-4">
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Setínoma EP</h3>
+                            <p class="text-indigo-100 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Pariatur, non.</p>
+                            <div class="flex justify-center space-x-4">
+                                <a href="https://youtube.com/playlist?list=OLAK5uy_moeXZyeRenOWY0m1KuqsI3o2LxGwud45E&si=Oc_dSTR5QeIuHZT5"
+                                    target="_blank"
+                                    class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white">YouTube</a>
+                                <a href="https://open.spotify.com/intl-es/album/21ZWWVkSaSMZABTmyWcjQc?si=T1RA1iWNQPmw2eU1rtehKQ"
+                                    target="_blank"
+                                    class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded text-white">Spotify</a>
+                                <a href="https://tidal.com/browse/album/396817615?u" target="_blank"
+                                    class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-white">Tidal</a>
+                            </div>
+                        </div>
+                        <!-- Tarjeta 2: Single 1 -->
+                        <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
+                            <img src="img/portadas/portadaDahmer.webp" alt="Single 1"
+                                class="w-full h-48 object-contain rounded-md mb-4">
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Single: Dahmer</h3>
+                            <p class="text-indigo-100 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quis,
+                                ad!</p>
+                            <div class="flex justify-center space-x-4">
+                                <a href="https://youtu.be/2MisKMcixAo?si=fS-hD5WZcUY6sl6w" target="_blank"
+                                    class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white">YouTube</a>
+                                <a href="https://open.spotify.com/intl-es/album/4TaUbV2fHXtmuiVfJJYUTc?si=xGxPfpCTQ-6YsXVItIfwcA"
+                                    target="_blank"
+                                    class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded text-white">Spotify</a>
+                                <a href="https://tidal.com/browse/album/431105003?u" target="_blank"
+                                    class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-white">Tidal</a>
+                            </div>
+                        </div>
+                        <!-- Tarjeta 3: Single 2 -->
+                        <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
+                            <img src="img/portadas/portadaExtincion.webp" alt="Single 2"
+                                class="w-full h-48 object-contain rounded-md mb-4">
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Single: Extinción</h3>
+                            <p class="text-indigo-100 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias, commodi?</p>
+                            <div class="flex justify-center space-x-4">
+                                <a href="https://youtu.be/DsC8jQXRbQE?si=nwJHZjDywHL-yeqg" target="_blank"
+                                    class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white">YouTube</a>
+                                <a href="https://open.spotify.com/intl-es/track/4PTG3Z6ehGkBFwjybzWkR8?si=b10eb282a33d467b"
+                                    target="_blank"
+                                    class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded text-white">Spotify</a>
+                                <a href="" class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-white">Tidal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: Videos -->
+            <div class="section" style="background-image: url('img/fondos/fondo3.webp');">
+                <div class="overlay"></div>
+                <div class="flex flex-col items-center justify-center text-center px-4 z-top relative">
+                    <h2 class="text-4xl font-bold text-fuchsia-400 mb-4">Videos</h2>
+                    <p class="text-lg text-indigo-100 max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Facere, perspiciatis.</p>
+                    <!-- Puedes incrustar un video de YouTube aquí -->
+                    <div class="mt-6 w-full max-w-xl aspect-video">
+                        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Tocatas -->
+            <div class="section" style="background-image: url('img/fondos/fondo4.webp');">
+                <div class="overlay"></div>
+                <div class="flex flex-col items-center justify-center text-center px-4 z-top relative">
+                    <h2 class="text-4xl font-bold text-fuchsia-400 mb-8">Tocatas</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
+
+                        <!-- Tarjeta 1 -->
+                        <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-4">Tocata "La Juguera"</h3>
+                            <a data-fancybox href="https://www.youtube.com/embed/xvm5yBV_zfY?si=26HA1JEhE6AbLc3n">
+                                <div class="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden">
+                                    <iframe class="w-full h-full pointer-events-none"
+                                        src="https://www.youtube.com/embed/xvm5yBV_zfY?si=26HA1JEhE6AbLc3n"
+                                        frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Tarjeta 2 -->
+                        <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-4">Tocata "Mirador"</h3>
+                            <a data-fancybox href="https://www.youtube.com/embed/XExKkSTZ3wA?si=WLdCSnVvA2-es0bN">
+                                <div class="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden">
+                                    <iframe class="w-full h-full pointer-events-none"
+                                        src="https://www.youtube.com/embed/XExKkSTZ3wA?si=WLdCSnVvA2-es0bN"
+                                        frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Tarjeta 3 -->
+                        <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-4">Setinoma en Vivo</h3>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=VIDEO_ID_3">
+                                <div class="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden">
+                                    <iframe class="w-full h-full pointer-events-none"
+                                        src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Slide 5: Fotos -->
+            <div class="section" style="background-image: url('img/fondos/fondo5.webp');">
+                <div class="overlay"></div>
+                <div class="flex flex-col items-center justify-center text-center px-4 z-top relative">
+                    <h2 class="text-4xl font-bold text-fuchsia-400 mb-4">Fotos</h2>
+                    <p class="text-lg text-indigo-100 max-w-2xl mb-6">Explora nuestras sesiones fotográficas y momentos
+                        en
+                        vivo.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
+                        <!-- Tarjeta 1 -->
+                        <a href="galeria.html"
+                            class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg hover:bg-opacity-70 transition">
+                            <img src="img/fotos/fotosGaleria1.webp" class="rounded-md w-full h-48 object-cover mb-4"
+                                alt="Galería en Vivo" />
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">En Vivo</h3>
+                            <p class="text-indigo-100">Fotos de nuestras tocatas más intensas.</p>
+                        </a>
+
+                        <!-- Tarjeta 2 -->
+                        <a href="galeria-backstage.html"
+                            class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg hover:bg-opacity-70 transition">
+                            <img src="img/fotos/fotosGaleria2.webp" class="rounded-md w-full h-48 object-cover mb-4"
+                                alt="Backstage" />
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Backstage</h3>
+                            <p class="text-indigo-100">Momentos únicos tras bambalinas.</p>
+                        </a>
+
+                        <!-- Tarjeta 3 -->
+                        <a href="galeria-estudio.html"
+                            class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg hover:bg-opacity-70 transition">
+                            <img src="img/fotos/fotosGaleria3.webp" class="rounded-md w-full h-48 object-cover mb-4"
+                                alt="Estudio" />
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Estudio</h3>
+                            <p class="text-indigo-100">Grabando, creando y destruyendo.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Fancybox JS -->
+            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+            <!-- JS FullPage -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+            <script>
+                function initFullPage() {
+                    if (typeof fullpage_api !== "undefined") {
+                        fullpage_api.destroy('all'); // Destroza fullPage si ya estaba activo
+                    }
+
+                    new fullpage('#fullpage', {
+                        autoScrolling: true,
+                        navigation: true,
+                        anchors: ['welcome', 'musica', 'videos', 'tocatas', 'fotos'],
+                        navigationTooltips: ['Bienvenida', 'Música', 'Videos', 'Tocatas', 'Fotos'],
+                        showActiveTooltip: true,
+                        responsiveWidth: 768
+                    });
+                }
+
+                // Llama la función en la primera carga
+                window.addEventListener('DOMContentLoaded', () => {
+                    initFullPage();
+                });
+
+                // Y también al volver a entrar al "home" con barba.js
+                barba.init({
+                    transitions: [{
+                        name: 'fade',
+                        leave(data) {
+                            return gsap.to(data.current.container, {
+                                opacity: 0,
+                                duration: 0.5
+                            });
+                        },
+                        enter(data) {
+                            return gsap.from(data.next.container, {
+                                opacity: 0,
+                                duration: 0.5
+                            });
+                        }
+                    }],
+                    views: [
+                        {
+                            namespace: 'inicio',
+                            afterEnter(data) {
+                                initFullPage(); // Re-inicia fullPage.js solo en el index
+                            }
+                        }
+                    ]
+                });
+            </script>
+
+            <script>
+                barba.init({
+                    transitions: [
+                        {
+                            name: 'fade',
+                            leave(data) {
+                                return gsap.to(data.current.container, {
+                                    opacity: 0,
+                                    duration: 0.5
+                                });
+                            },
+                            enter(data) {
+                                return gsap.from(data.next.container, {
+                                    opacity: 0,
+                                    duration: 0.5
+                                });
+                            }
+                        }
+                    ]
+                });
+            </script>
+
+            <!-- Necesitas GSAP para animaciones -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+
+</body>
+
+</html>

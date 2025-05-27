@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setinoma - Galería en Vivo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: black;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body data-barba="wrapper" class="text-white relative min-h-screen bg-cover bg-center"
+    style="background-image: url('img/fondos/fondo5.webp');">
+    <div data-barba="container" data-barba-namespace="galeria">
+
+        <div class="overlay"></div>
+        <div class="relative z-10 px-4 py-10 flex flex-col items-center text-center">
+            <h1 class="text-5xl font-bold text-fuchsia-500 mb-4">Galería: En Vivo</h1>
+            <p class="text-indigo-200 mb-8 max-w-2xl">Revive la energía de nuestros shows con estas imágenes capturadas
+                en vivo.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-6xl">
+                <!-- 10 imágenes con Fancybox -->
+                <a data-fancybox="galeria" href="img/fotos/vivo1.webp"><img src="img/fotos/vivo1.webp" alt="vivo1"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo2.webp"><img src="img/fotos/vivo2.webp" alt="vivo2"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo3.webp"><img src="img/fotos/vivo3.webp" alt="vivo3"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo4.webp"><img src="img/fotos/vivo4.webp" alt="vivo4"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo5.webp"><img src="img/fotos/vivo5.webp" alt="vivo5"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo6.webp"><img src="img/fotos/vivo6.webp" alt="vivo6"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo7.webp"><img src="img/fotos/vivo7.webp" alt="vivo7"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo8.webp"><img src="img/fotos/vivo8.webp" alt="vivo8"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo9.webp"><img src="img/fotos/vivo9.webp" alt="vivo9"
+                        class="rounded-lg shadow-lg" /></a>
+                <a data-fancybox="galeria" href="img/fotos/vivo10.webp"><img src="img/fotos/vivo10.webp" alt="vivo10"
+                        class="rounded-lg shadow-lg" /></a>
+            </div>
+
+            <a href="index.html#fotos"
+                class="mt-10 inline-block bg-fuchsia-600 hover:bg-fuchsia-700 px-4 py-2 rounded text-white font-bold">Volver</a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+        <script>
+            barba.init({
+                transitions: [
+                    {
+                        name: 'fade',
+                        leave(data) {
+                            return gsap.to(data.current.container, {
+                                opacity: 0,
+                                duration: 0.5
+                            });
+                        },
+                        enter(data) {
+                            return gsap.from(data.next.container, {
+                                opacity: 0,
+                                duration: 0.5
+                            });
+                        }
+                    }
+                ]
+            });
+        </script>
+
+        <!-- Necesitas GSAP para animaciones -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</body>
+
+</html>
