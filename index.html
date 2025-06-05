@@ -123,8 +123,9 @@
                         <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
                             <img src="img/portadas/portadaExtincion.webp" loading="lazy" alt="Single 2"
                                 class="w-full h-48 object-contain rounded-md mb-4 br-ext">
-                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Single: Extinción</h3>
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2 br-ext">Single: Extinción</h3>
                             <p class="text-indigo-100 mb-4">Pronto.</p>
+                            <!--
                             <div class="flex justify-center space-x-4 text-2xl">
                                 <a href="https://youtu.be/DsC8jQXRbQE?si=nwJHZjDywHL-yeqg"
                                     aria-label="Extincion Youtube" target="_blank"
@@ -141,6 +142,7 @@
                                     <i class="fas fa-music"></i>
                                 </a>
                             </div>
+                            -->
                         </div>
 
                     </div>
@@ -175,17 +177,28 @@
             <div class="section" style="background-image: url('img/fondos/fondo4.webp');">
                 <div class="overlay"></div>
                 <div class="flex flex-col items-center justify-center text-center px-4 z-top relative">
-                    <h2 class="text-4xl font-bold text-fuchsia-400 mb-8">Tocatas</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
+                    <h2 class="text-4xl font-bold text-fuchsia-400 mb-8">Tocatas (Videos)</h2>
+                    <p class="text-lg text-indigo-100 max-w-2xl mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, necessitatibus.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full">
 
                         <!-- Tarjeta 1 -->
                         <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
                             <h3 class="text-2xl font-semibold text-fuchsia-300 mb-4">Tocata "La Juguera"</h3>
-                            <a data-fancybox href="https://www.youtube.com/embed/xvm5yBV_zfY?si=26HA1JEhE6AbLc3n">
-                                <div class="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden">
-                                    <iframe class="w-full h-full pointer-events-none"
-                                        src="https://www.youtube.com/embed/xvm5yBV_zfY?si=26HA1JEhE6AbLc3n"
-                                        frameborder="0" allowfullscreen></iframe>
+                            <a href="https://youtu.be/xvm5yBV_zfY?si=QILhHZSC6L4-vgyV" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group block rounded overflow-hidden transition-transform duration-300 hover:scale-105">
+                                <div
+                                    class="rounded overflow-hidden transition-shadow duration-300 group-hover:shadow-[0_0_20px_#f43f5e] group-active:shadow-[0_0_30px_#f43f5e]">
+                                    <img src="img/fotos-tocatas/laJuguera.webp" alt="Tocata La Juguera"
+                                        class="w-full h-auto rounded">
+                                </div>
+                                <div class="mt-3 flex justify-center">
+                                    <svg class="w-8 h-8 text-red-600 hover:text-red-500 transition duration-300"
+                                        fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.615 3.184c-1.302-.348-6.53-.348-6.53-.348s-5.228 0-6.53.348c-1.343.358-2.392 1.39-2.75 2.746C3.48 7.269 3.48 12 3.48 12s0 4.731.325 6.07c.358 1.356 1.407 2.388 2.75 2.746 1.302.348 6.53.348 6.53.348s5.228 0 6.53-.348c1.343-.358 2.392-1.39 2.75-2.746.325-1.339.325-6.07.325-6.07s0-4.731-.325-6.07c-.358-1.356-1.407-2.388-2.75-2.746zM9.75 15.568V8.432L15.5 12l-5.75 3.568z" />
+                                    </svg>
                                 </div>
                             </a>
                         </div>
@@ -193,31 +206,49 @@
                         <!-- Tarjeta 2 -->
                         <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
                             <h3 class="text-2xl font-semibold text-fuchsia-300 mb-4">Tocata "Mirador"</h3>
-                            <a data-fancybox href="https://www.youtube.com/embed/XExKkSTZ3wA?si=WLdCSnVvA2-es0bN">
-                                <div class="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden">
-                                    <iframe class="w-full h-full pointer-events-none"
-                                        src="https://www.youtube.com/embed/XExKkSTZ3wA?si=WLdCSnVvA2-es0bN"
-                                        frameborder="0" allowfullscreen></iframe>
+                            <a href="https://youtu.be/XExKkSTZ3wA?si=qlEo_8dKKLPQg6sj" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group block rounded overflow-hidden transition-transform duration-300 hover:scale-105">
+                                <div
+                                    class="rounded overflow-hidden transition-shadow duration-300 group-hover:shadow-[0_0_20px_#f43f5e] group-active:shadow-[0_0_30px_#f43f5e]">
+                                    <img src="img/fotos-tocatas/mirador.webp" alt="Tocata Mirador"
+                                        class="w-full h-auto rounded">
+                                </div>
+                                <div class="mt-3 flex justify-center">
+                                    <svg class="w-8 h-8 text-red-600 hover:text-red-500 transition duration-300"
+                                        fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.615 3.184c-1.302-.348-6.53-.348-6.53-.348s-5.228 0-6.53.348c-1.343.358-2.392 1.39-2.75 2.746C3.48 7.269 3.48 12 3.48 12s0 4.731.325 6.07c.358 1.356 1.407 2.388 2.75 2.746 1.302.348 6.53.348 6.53.348s5.228 0 6.53-.348c1.343-.358 2.392-1.39 2.75-2.746.325-1.339.325-6.07.325-6.07s0-4.731-.325-6.07c-.358-1.356-1.407-2.388-2.75-2.746zM9.75 15.568V8.432L15.5 12l-5.75 3.568z" />
+                                    </svg>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- Tarjeta 3 -->
+
+                        <!-- Tarjeta 3 --> <!-- 
                         <div class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg">
                             <h3 class="text-2xl font-semibold text-fuchsia-300 mb-4">Setinoma en Vivo</h3>
-                            <a data-fancybox href="https://www.youtube.com/watch?v=VIDEO_ID_3">
-                                <div class="aspect-w-16 aspect-h-9 w-full rounded overflow-hidden">
-                                    <iframe class="w-full h-full pointer-events-none"
-                                        src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0"
-                                        allowfullscreen></iframe>
+                            <a href="" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group block rounded overflow-hidden transition-transform duration-300 hover:scale-105">
+                                <div
+                                    class="rounded overflow-hidden transition-shadow duration-300 group-hover:shadow-[0_0_20px_#f43f5e] group-active:shadow-[0_0_30px_#f43f5e]">
+                                    <img src="images/tocatas/setinoma-en-vivo.jpg" alt="Setinoma en Vivo"
+                                        class="w-full h-auto rounded">
+                                </div>
+                                <div class="mt-3 flex justify-center">
+                                    <svg class="w-8 h-8 text-red-600 hover:text-red-500 transition duration-300"
+                                        fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.615 3.184c-1.302-.348-6.53-.348-6.53-.348s-5.228 0-6.53.348c-1.343.358-2.392 1.39-2.75 2.746C3.48 7.269 3.48 12 3.48 12s0 4.731.325 6.07c.358 1.356 1.407 2.388 2.75 2.746 1.302.348 6.53.348 6.53.348s5.228 0 6.53-.348c1.343-.358 2.392-1.39 2.75-2.746.325-1.339.325-6.07.325-6.07s0-4.731-.325-6.07c-.358-1.356-1.407-2.388-2.75-2.746zM9.75 15.568V8.432L15.5 12l-5.75 3.568z" />
+                                    </svg>
                                 </div>
                             </a>
                         </div>
-
+-->
                     </div>
                 </div>
             </div>
-
 
 
             <!-- Slide 5: Fotos -->
@@ -225,9 +256,8 @@
                 <div class="overlay"></div>
                 <div class="flex flex-col items-center justify-center text-center px-4 z-top relative">
                     <h2 class="text-4xl font-bold text-fuchsia-400 mb-4">Fotos</h2>
-                    <p class="text-lg text-indigo-100 max-w-2xl mb-6">Explora nuestras sesiones fotográficas y momentos
-                        en
-                        vivo.</p>
+                    <p class="text-lg text-indigo-100 max-w-2xl mb-6">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Asperiores est voluptate exercitationem, velit neque laborum?</p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
 
                         <!-- Tarjeta 1 -->
@@ -236,25 +266,26 @@
                             <img src="img/fotos/fotosGaleria1.webp" class="rounded-md w-full h-48 object-cover mb-4"
                                 alt="Galería en Vivo" />
                             <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">En Vivo</h3>
-                            <p class="text-indigo-100">Fotos de nuestras tocatas más intensas.</p>
+                            <p class="text-indigo-100">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                         </a>
 
                         <!-- Tarjeta 2 -->
-                        <a href="galeria-backstage.html"
+                        <a href="#"
                             class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg hover:bg-opacity-70 transition">
                             <img src="img/fotos/fotosGaleria2.webp" class="rounded-md w-full h-48 object-cover mb-4"
                                 alt="Backstage" />
-                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Backstage</h3>
-                            <p class="text-indigo-100">Momentos únicos tras bambalinas.</p>
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Ensayos y otros</h3>
+                            <p class="text-indigo-100">Lorem ipsum dolor sit amet consectetur.</p>
                         </a>
 
                         <!-- Tarjeta 3 -->
-                        <a href="galeria-estudio.html"
+                        <a href="#"
                             class="bg-black bg-opacity-50 rounded-lg p-4 shadow-lg hover:bg-opacity-70 transition">
                             <img src="img/fotos/fotosGaleria3.webp" class="rounded-md w-full h-48 object-cover mb-4"
                                 alt="Estudio" />
-                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Estudio</h3>
-                            <p class="text-indigo-100">Grabando, creando y destruyendo.</p>
+                            <h3 class="text-2xl font-semibold text-fuchsia-300 mb-2">Estudio y grabación</h3>
+                            <p class="text-indigo-100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Temporibus laborum maxime minus.</p>
                         </a>
                     </div>
                 </div>
